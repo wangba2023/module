@@ -1,0 +1,11 @@
+﻿#!name=PicsewProCrack
+#!desc=PicsewProCrack
+
+[Script]
+
+# > Picsew解锁专业版
+PicsewProCrack_12 = type=http-response, pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PicsewProCrack.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% buy.itunes.apple.com
