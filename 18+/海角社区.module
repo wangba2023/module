@@ -1,0 +1,12 @@
+﻿#!name=海角社区
+#!desc=海角   解锁SVIP会员
+
+[Script]
+
+haijiao_13 = type=http-response, pattern=^http[s]?:\/\/.*(haijiao|hj).+(api\/topic\/|post\/details\?pid=)(\d+)$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/haijiao.js, timeout=60, script-update-interval=0
+
+haijiao_14 = type=http-response, pattern=^http[s]?:\/\/.*(haijiao|hj).+api\/banner\/banner_list$, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/haijiao.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% *hj*,*haijiao*

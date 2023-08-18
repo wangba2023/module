@@ -1,0 +1,10 @@
+﻿#!name=蜜桃视频
+#!desc=蜜桃   解锁SVIP会员
+
+[Script]
+
+mtav_16 = type=http-response, pattern=^http[s]://api.mitao88.vip//api.php/(Mtdata/detail|MtUser/(info|reg)|Mtuser/(shortvideo|sysnotify)), requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/mtav.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% api.mitao88.vip
